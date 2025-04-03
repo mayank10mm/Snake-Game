@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+*{
+    margin: 0;padding: 0;
+    font-family: "Permanent Marker";
+}
+
+.body{
+    background: #111111;
+    min-height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 35px;
+    font-weight: bold;
+    color: grey;
+}
+#highScoreBox{
+    position: absolute;
+    top: 55px;
+    right: 120px;
+    font-size: 35px;
+    font-weight: bold;
+    color: grey;
+}
+
+#board{
+    background: #9b59b6 ;
+    min-height: 90vh;
+    background-size: 100vw 100vh;
+    /* background-repeat: no-repeat; */
+    width: 90vmin;
+    height: 92vmin;
+    border: transparent;
+    border-radius: 20px;
+
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+
+.head{
+    background: linear-gradient(  #EF7126, brown );
+    border: .25vmin solid yellow  ;
+    border-radius: 12px; 
+    transform: scale(1.02);
+}
+
+.snake{
+    background-color: #F9E559;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient(grey, black);
+    border: .25vmin solid black;
+    border-radius: 50%;
+}
+
